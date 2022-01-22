@@ -10,6 +10,7 @@ class ChatServer(rpc.ChatServerServicer):
   def __init__(self):
     self.chats = []
 
+  # クライアントに新しいメッセージを送信するために使用されるストリーム
   def ChatStream(self, request_iterator, context):
     lastindex = 0
     while True:
@@ -18,6 +19,7 @@ class ChatServer(rpc.ChatServerServicer):
         lastindex += 1
         yield n
 
+  # クライアントがサーバーにチャットを送信するときに呼び出されます
   def SendNote(self, request: chat.Note, context):
     print("[{}] {}".format(request.name, request.message))
     self.chats.append(request)

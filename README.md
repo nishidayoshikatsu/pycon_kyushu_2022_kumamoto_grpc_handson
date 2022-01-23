@@ -1,6 +1,7 @@
 ## pycon_kyushu_2022_kumamoto_grpc_handson
 
 「Python で gRPC 入門 ~~~web~~ chat を実装してみるハンズオン~」のセッションで発表したリポジトリです。
+発表資料は[こちら](https://speakerdeck.com/nishidayoshikatsu/pycon-kyushu-2022-python-de-grpc-ru-men-chat-woshi-zhuang-sitemiruhanzuon)
 
 ### 概要
 
